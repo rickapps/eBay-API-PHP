@@ -9,7 +9,9 @@ error_reporting(E_ALL);
 // Set to true if your web server is on a Windows machine
 define('WINDOWS', false);
 // URL used to serve the files that are in the public_html folder of this project
-define('SITE_URL', 'http://sandbox/eBayDemo/');
+// If served from the root folder, just put /. If served from another folder:
+// http://myDomainName.com/eBayDemo, you would put '/eBayDemo/'
+define('SITE_URL', '/');
 
 // Put your eBay authorization code here
 // For the calls shown, only your developer token is needed
