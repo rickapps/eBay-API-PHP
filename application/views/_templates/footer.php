@@ -5,6 +5,7 @@
 <!-- our JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
 <script src="<?php echo SITE_URL . 'js/bootstrap-select-dropdown.min.js">';?></script>
+<script>var siteBase='/eBayDemo/';</script>
 <script type="text/javascript" src="<?php echo SITE_URL; ?>js/application.js"></script>
 <?php if (function_exists('customPageFooter')){
           customPageFooter();

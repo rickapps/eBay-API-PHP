@@ -9,7 +9,7 @@ $(document).ready(function(){
             var results = $('#catDesc');
             catID.val('');
             results.empty();
-            $.getJSON('/process/searchCategories', {term: term}, function(data){
+            $.getJSON(siteBase + '/process/searchCategories', {term: term}, function(data){
                 for (var x = 0; x < data.length; x++) {
                     results.append(new Option(data[x].desc, data[x].catid));
                 }
