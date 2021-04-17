@@ -12,6 +12,10 @@ define('WINDOWS', false);
 // If served from the root folder, just put /. If served from another folder:
 // http://myDomainName.com/eBayDemo, you would put '/eBayDemo/'
 define('SITE_URL', '/');
+// Put the location of your curl program here
+define('CURL_PGM', '/usr/bin/curl');
+// For windows, curl location might be here.
+//define('CURL_PGM', '"C:\Program Files (x86)\Common Files\curl772-64bit\bin\curl.exe"');
 
 // Put your eBay authorization code here
 // For the calls shown, only your developer token is needed

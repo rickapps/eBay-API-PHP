@@ -18,7 +18,7 @@ class UnitOfWork
 
         // generate a database connection, using the PDO connector
         // @see http://net.tutsplus.com/tutorials/php/why-you-should-be-using-phps-pdo-for-database-access/
-        $this->myDatabaseConnection = new PDO(DBSTORE_DSN, DBSTORE_USER, DBSTORE_PASS, $options);
+        //$this->myDatabaseConnection = new PDO(DBSTORE_DSN, DBSTORE_USER, DBSTORE_PASS, $options);
         $this->webstore = new WebStoreRepository($this->myDatabaseConnection);
         $this->eBay = new eBayRepository(AUTHORIZATION);
      }

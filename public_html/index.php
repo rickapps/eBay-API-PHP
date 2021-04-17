@@ -18,7 +18,10 @@
 define('PROJECT_ROOT', '/home/rickapps/Projects/eBay-API-PHP');
 
 // load application config (error reporting etc.)
-require PROJECT_ROOT . '/application/config/DemoConstants.php';
+//require PROJECT_ROOT . '/application/config/DemoConstants.php';
+// Comment out one of these constant files, but don't put your passwords 
+// into source control.
+require PROJECT_ROOT . '/application/config/ActualContants.php';
 
 // load application class
 require PROJECT_ROOT . '/application/libs/application.php';

@@ -8,7 +8,11 @@
 <script>var siteBase='/eBayDemo/';</script>
 <script type="text/javascript" src="<?php echo SITE_URL; ?>js/application.js"></script>
 <?php if (function_exists('customPageFooter')){
+    // If a single page needs some javascript or other functionality
+    // not needed on all pages, include it in the function customPageFooter
+    // on that page. 
           customPageFooter();
-      }?>
+      }
+?>
 </body>
 </html>

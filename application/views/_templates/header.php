@@ -10,7 +10,10 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>css/style.css">
     <?php if (function_exists('customPageHeader')){
-      customPageHeader();
+      // If a single page needs some javascript or other functionality
+      // not needed on all pages, include it in the function customPageHeader
+      // on that page. 
+    customPageHeader();
     }?>
 
     <title><?php isset($PageTitle) ? print($PageTitle) : print("eBay API Demo")?></title>
