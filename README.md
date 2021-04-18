@@ -1,4 +1,4 @@
-# eBay-API-PHP
+# eBay Developer API 
 This small php application should get you started using the **eBay Developer's API**. The API calls demonstrated only require Application access tokens. The calls return
 general eBay information, not information specific to a user's account. To do that you need to add User application tokens. It should be easy to extend the code included here for that.
 

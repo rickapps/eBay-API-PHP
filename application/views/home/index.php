@@ -1,13 +1,13 @@
 <?php
 // Basic site information.
-$PageTitle="Setup Demo";
+$PageTitle="API Setup";
 // Add tags for page header section
 function customPageHeader(){?>
 <?php }
 include_once(PROJECT_ROOT . '/application/views/_templates/header.php');
 ?>
 <!-- Start of page body ----------------------------------------->
-<h1>eBay API Demo</h1>
+<h1>eBay API Setup</h1>
     <!-- main content output -->
     <div>
     <p>Make sure you have made the necessary modifications to DemoConstants.php and /.htaccess.

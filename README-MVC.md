@@ -1,6 +1,10 @@
+# PHP MVC Demo
+
+You do not need MVC to use the eBay API calls, but to get this demo working, you need to make a few small edits.
+
 To implement MVC on your server, you will need to modify .htaccess or web.config to rewrite urls. A sample .htaccess is included. You also need to modify DemoConstants.php to specify the locations of these folders and the location of your curl program.
 
-Create two folders on your webserver:
+The included files should be installed into two separate folders on your webserver:
 + **public_html** - Folder contains files that can be served from your web server.  The folder should either be your web root folder, or be a sub folder within your web root folder. 
 + **application** - Folder contains files that should not be publicly available and cannot be served by your webserver. This demo assumes the folder is at the same level as public_html.
 
