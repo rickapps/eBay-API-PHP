@@ -11,15 +11,23 @@ include_once(PROJECT_ROOT . '/application/views/catModal.php');
 <h1>Search eBay Categories</h1>
     <!-- main content output -->
     <div>
-    <button type="button" class="btn btn-sm btn-light float-right" data-toggle="modal" data-target="#categoryModal">New</button>
+     <p>Demo of API call get_category_suggestions.<br><a 
+     href='https://developer.ebay.com/api-docs/commerce/taxonomy/resources/methods' 
+     target="_blank" rel="noopener noreferrer">Documentation</a></p>
+     </div>
+    <div class="text-center">
+    <button type="button" class="btn btn-lg btn-primary" 
+    data-toggle="modal" data-target="#categoryModal">Search</button>
+    <p id='curCategory'>Click Search to select a category.</p>
      </div>
 <!-- End of page body ------------------------------------------>
 <?php
 // Add tags for page footer 
 function customPageFooter() { ?>
-<!-- Custom JavaScript for this site -->
 <!-- Code for category search modal -->
 <script type="text/javascript" src="<?php echo SITE_URL; ?>js/catModal.js"></script>
+<!-- Code for this page only -->
+<script type="text/javascript" src="<?php echo SITE_URL; ?>js/categories.js"></script>
 <?php }
 include_once(PROJECT_ROOT . '/application/views/_templates/footer.php');
 ?>

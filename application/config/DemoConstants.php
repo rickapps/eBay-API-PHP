@@ -14,12 +14,14 @@ define('WINDOWS', false);
 define('SITE_URL', '/');
 // Put the location of your curl program here
 define('CURL_PGM', '/usr/bin/curl');
-// For windows, curl location might be here.
+// For windows, curl location might be something like below.
 //define('CURL_PGM', '"C:\Program Files (x86)\Common Files\curl772-64bit\bin\curl.exe"');
 
 // Put your eBay authorization code here
-// For the calls shown, only your developer token is needed
-define('AUTHORIZATION', '[Put your hashed developer authorization token here');
+// For the calls shown, only your developer token is needed. DO NOT put the 
+// word 'Basic' in front. Just include the base64 hashed value, nothing else.
+// See the home/index.php page for more info.
+define('AUTHORIZATION', 'Put your hashed developer authorization token here');
 
 // If you are using a database, define your connection info here
 define('DBSTORE_USER', 'myUserName');

@@ -14,7 +14,8 @@
                 <form method='post' action=''>
                     <div class="form-group row py-2">
                         <div class='col-sm-9'>
-                        <input type="text" class="form-control" id="searchWord" name="searchWord" maxlength="50">
+                        <input type="text" class="form-control" id="searchWord" name="searchWord"
+                        placeholder="Enter your category search terms" maxlength="50">
                         </div>
                         <div class='col-sm-3'>
                             <button type="button" class="btn btn-primary" id="btnSearch">Search</button>
@@ -32,7 +33,7 @@
                 <div class="form-group row py-2">
                     <label for="categoryID" class="col-sm-3 col-form-label">Category ID:</label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="categoryID" placeholder="Cat ID">
+                    <input type="text" class="form-control" id="categoryID" placeholder="Select a category above">
                     </div>
                 </div>
             </div><!-- End Body -->
