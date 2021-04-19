@@ -14,10 +14,37 @@ include_once(PROJECT_ROOT . '/application/views/specificsModal.php');
     <p>Demo of API call get_item_aspects_for_category.<br><a 
      href='https://developer.ebay.com/api-docs/commerce/taxonomy/resources/methods' 
      target="_blank" rel="noopener noreferrer">Documentation</a>
-     </p>
-     </div>
-     <div class="text-center">
-    <button type="button" class="btn btn-md btn-primary" data-toggle="modal" data-target="#itemSpecifics">Specifics</button>
+    </p>
+    </div>
+
+    <div>
+    <label for="CategoryID">Recent Categories:</label>
+    <div class="input-group">
+    <select class="form-control custom-select" id="CategoryID" name="CategoryID">
+    <?php
+    if (is_null($item->CategoryID) || $item->CategoryID <= 0)
+    {
+        echo "<option value='0' selected disabled>You must select a category</option>";
+    }
+    foreach ($categories as $category)
+    {   
+        $name = preg_replace('/[\x00-\x1F\x7F]/', '', $category['Name']);
+        $catid = preg_replace('/[\x00-\x1F\x7F]/', '', $category['CategoryID']);
+        if ($item->CategoryID == $catid) {
+            echo "<option value=" . $catid . " selected>" . $name . "</option>";
+        }
+        else {
+            echo "<option value=" . $catid . ">" . $name . "</option>";
+        }
+    }
+    ?>
+    </select>
+    <span class=input-group-btn>
+    <button type="button" class="btn btn-md btn-primary mx-2" data-toggle="modal" data-target="#itemSpecifics">Get Specifics</button>
+    </span>
+    </div>
+    <p class="m-2">Recent categories come from the previous page. Choose a category then click Get Specifics. 
+    Item aspects change depending on the category selected. Not all eBay categories have item aspects.
     </div>
 <!-- End of page body ------------------------------------------>
 <?php

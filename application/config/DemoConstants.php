@@ -24,6 +24,7 @@ define('CURL_PGM', '/usr/bin/curl');
 define('AUTHORIZATION', 'Put your hashed developer authorization token here');
 
 // If you are using a database, define your connection info here
+// A database is not used by this demo so you can ignore this for now.
 define('DBSTORE_USER', 'myUserName');
 define('DBSTORE_PASS', 'myPassword');
 define('DBSTORE_DSN', 'mysql:host=myDatabaseURI;dbname=nameOfMyDatabase');

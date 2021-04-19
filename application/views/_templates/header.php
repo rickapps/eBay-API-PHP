@@ -30,13 +30,13 @@
              <a class="nav-link" href="<?php echo SITE_URL; ?>home/index">Setup</a>
            </li>
            <li class="nav-item">
-              <a class="nav-link" href="<?php echo SITE_URL; ?>home/tokens">Tokens</a>
-           </li>
-           <li class="nav-item">
                <a class="nav-link" href="<?php echo SITE_URL; ?>home/categories">Categories</a>
            </li>
            <li class="nav-item">
                <a class="nav-link" href="<?php echo SITE_URL; ?>home/specifics">Item Specifics</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="<?php echo SITE_URL; ?>home/tokens">Tokens</a>
            </li>
        </ul>
     </div>

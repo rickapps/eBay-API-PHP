@@ -17,8 +17,8 @@ include_once(PROJECT_ROOT . '/application/views/catModal.php');
      </div>
     <div class="text-center">
     <button type="button" class="btn btn-lg btn-primary" 
-    data-toggle="modal" data-target="#categoryModal">Search</button>
-    <p id='curCategory'>Click Search to select a category.</p>
+    data-toggle="modal" data-target="#categoryModal">Select</button>
+    <p id='curCategory' class="m-2">Click Select to select a category.</p>
      </div>
 <!-- End of page body ------------------------------------------>
 <?php
