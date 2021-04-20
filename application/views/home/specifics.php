@@ -18,24 +18,13 @@ include_once(PROJECT_ROOT . '/application/views/specificsModal.php');
     </div>
 
     <div>
-    <label for="CategoryID">Recent Categories:</label>
+    <label for="CategoryID">Sample Categories:</label>
     <div class="input-group">
     <select class="form-control custom-select" id="CategoryID" name="CategoryID">
     <?php
-    if (is_null($item->CategoryID) || $item->CategoryID <= 0)
-    {
-        echo "<option value='0' selected disabled>You must select a category</option>";
-    }
-    foreach ($categories as $category)
+    foreach($categories as $category)
     {   
-        $name = preg_replace('/[\x00-\x1F\x7F]/', '', $category['Name']);
-        $catid = preg_replace('/[\x00-\x1F\x7F]/', '', $category['CategoryID']);
-        if ($item->CategoryID == $catid) {
-            echo "<option value=" . $catid . " selected>" . $name . "</option>";
-        }
-        else {
-            echo "<option value=" . $catid . ">" . $name . "</option>";
-        }
+        echo "<option value=" . $category['catid'] . ">" . $category['desc'] . "</option>";
     }
     ?>
     </select>
@@ -43,7 +32,7 @@ include_once(PROJECT_ROOT . '/application/views/specificsModal.php');
     <button type="button" class="btn btn-md btn-primary mx-2" data-toggle="modal" data-target="#itemSpecifics">Get Specifics</button>
     </span>
     </div>
-    <p class="m-2">Recent categories come from the previous page. Choose a category then click Get Specifics. 
+    <p class="m-2">Select a category then click Get Specifics. 
     Item aspects change depending on the category selected. Not all eBay categories have item aspects.
     </div>
 <!-- End of page body ------------------------------------------>
@@ -56,8 +45,8 @@ $(document).ready(function() {
     // Item specifics modal is opening
     $('#itemSpecifics').on('show.bs.modal', function (e) {
         var category = $('#CategoryID');
-        var item = $('#RID');
-        $('#itemSpecifics .modal-body').load('/process/loadSpecifics/' + item.val() + '/' + category.val(), function() {
+        var item = 0;
+        $('#itemSpecifics .modal-body').load(siteBase + '/process/loadSpecifics/' + item + '/' + category.val(), function() {
             $('#specMaster').trigger('change');
         });
     });

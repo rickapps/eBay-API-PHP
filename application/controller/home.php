@@ -37,7 +37,7 @@ class Home extends Controller
     // to be listed on eBay
     public function specifics()
     {
-        //$items = $this->uow->WebStoreRep()->findAll();
+        $categories = $this->uow->eBayRep()->searchCategories("calculators");
         require PROJECT_ROOT . '/application/views/home/specifics.php';
     }
 
