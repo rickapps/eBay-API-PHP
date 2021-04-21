@@ -10,15 +10,14 @@ There are three methods demonstrated. You will find them in the file **eBayrepos
 2. ***searchCategories($term)*** - search eBay for categories suggested by your search terms
 3. ***getItemAspects($catID)*** - get item specifics for a given eBay category
 
-Information is transferred to and from eBay using the [curl](https://curl.se/) program. You will need a copy of it on your server. Edit DemoContants.php to contain the path to the program.
+Information is transferred to and from eBay using the [curl](https://curl.se/) program. You will need a copy of it on your server. Edit DemoContants.php to specify the path to the program.
 
 The demo app uses the MVC pattern. You can use MVC or scrap it. The three methods will work regardless of MVC. You will find more documentation on how MVC is implemented for this project in  *README-MVC.md*.
 
 ## INSTALATION
 1. Copy the files to a publicly accessible location on your web server. The files in folder public_html are intended to be served by the web server. The files in folder /application are not intended to be in a folder that can be browsed over the web. You will find a .htaccess file in that folder to prevent it from being browsed . You can also install the /application folder outside your web root folder to prevent it from being browsed. 
 2. Install mod_rewrite on your server if not already supported.
-3. Edit the file * /.htaccess * (* Web.config * for IIS). You may need to change the line 'RewriteBase /' to point to the folder where you installed this project. If you installed the project such that the url is * www.myDomain.com *, no changes are needed. But if you copied the project to a subfolder, such as * www.myDomain.com/eBayAPI *, change the line to 'RewriteBase /eBayAPI/'
-4. Edit the file * /public_html/index.php * so the line 'define('PROJECT_ROOT', ...' contains the full path to the public_html and application folders. For linux this might be '/var/www/myDomain'. For IIS, 'C:/Inetpub/vhosts/myDomain.com'. The folders 'public_html' and 'application' must be at the same directory level so they can both be accessed using 'PROJECT_ROOT' . /application and 'PROJECT_ROOT'. /public_html'.
+3. Edit the file */.htaccess* (*Web.config* for IIS). You may need to change the line 'RewriteBase /' to point to the folder where you installed this project. If you installed the project such that the url is *www.myDomain.com*, no changes are needed. But if you copied the project to a subfolder, such as *www.myDomain.com/eBayAPI*, change the line to 'RewriteBase /eBayAPI/'
+4. Edit the file */public_html/index.php* so the line 'define('PROJECT_ROOT', ...' contains the full path to the public_html and application folders. For linux this might be '/var/www/myDomain'. For IIS, 'C:/Inetpub/vhosts/myDomain.com'. The folders 'public_html' and 'application' must be at the same directory level so they can both be accessed using 'PROJECT_ROOT' . /application and 'PROJECT_ROOT'. /public_html'.
 5. Make sure the [curl](https://curl.se/) program is installed on your system.
 6. Edit the file 'application/config/DemoConstants.php' using the instructions in the file.
-7. Edit the file 'applicaiton/views/_templates/footer.php to define the js constant 'siteBase' to be the same as the php constant SITE_URL from DemoConstants.php.

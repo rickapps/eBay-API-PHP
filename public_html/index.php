@@ -15,14 +15,16 @@
 // web browser that can access the contents of the folder at project root.
 // The web server should be set to serve the files in folder public_html
 // such as this index.php file.
-//define('PROJECT_ROOT', '/home/rickapps/Projects/eBay-API-PHP');
-define('PROJECT_ROOT', '/home2/rickeichhorn/php-mvc.rickapps.com');
+define('PROJECT_ROOT', '/home/rickapps/Projects/eBay-API-PHP');
+// How it is defined for a hostgator subdomain. The subdomain root folder 
+// is /home2/hostgator12/php-mvc.rickapps.com/public_html.
+//define('PROJECT_ROOT', '/home2/hostgator12/php-mvc.rickapps.com');
 
 // load application config (error reporting etc.)
-//require PROJECT_ROOT . '/application/config/DemoConstants.php';
+require PROJECT_ROOT . '/application/config/DemoConstants.php';
 // Comment out one of these constant files, but don't put your passwords 
 // into source control.
-require PROJECT_ROOT . '/application/config/ActualConstants.php';
+//require PROJECT_ROOT . '/application/config/ActualConstants.php';
 
 // load application class
 require PROJECT_ROOT . '/application/libs/application.php';

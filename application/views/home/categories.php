@@ -25,9 +25,9 @@ include_once(PROJECT_ROOT . '/application/views/catModal.php');
 // Add tags for page footer 
 function customPageFooter() { ?>
 <!-- Code for category search modal -->
-<script type="text/javascript" src="<?php echo SITE_URL; ?>js/catModal.js"></script>
+<script type="text/javascript" src="<?php echo SITE_BASE; ?>js/catModal.js"></script>
 <!-- Code for this page only -->
-<script type="text/javascript" src="<?php echo SITE_URL; ?>js/categories.js"></script>
+<script type="text/javascript" src="<?php echo SITE_BASE; ?>js/categories.js"></script>
 <?php }
 include_once(PROJECT_ROOT . '/application/views/_templates/footer.php');
 ?>
