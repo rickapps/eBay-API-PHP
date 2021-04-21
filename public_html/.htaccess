@@ -10,7 +10,7 @@ Options -Indexes
 
 # When using the script within a sub-folder, put this path here, like /mysubfolder/
 # If your app is in the root of your web folder, then you can comment out the line below
-#RewriteBase /eBayDemo/
+#RewriteBase /
 
 # General rewrite rules
 RewriteCond %{REQUEST_FILENAME} !-d
