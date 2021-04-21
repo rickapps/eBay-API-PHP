@@ -15,7 +15,8 @@
 // web browser that can access the contents of the folder at project root.
 // The web server should be set to serve the files in folder public_html
 // such as this index.php file.
-define('PROJECT_ROOT', '/home/rickapps/Projects/eBay-API-PHP');
+//define('PROJECT_ROOT', '/home/rickapps/Projects/eBay-API-PHP');
+define('PROJECT_ROOT', '/home2/rickeichhorn/php-mvc.rickapps.com');
 
 // load application config (error reporting etc.)
 //require PROJECT_ROOT . '/application/config/DemoConstants.php';

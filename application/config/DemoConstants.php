@@ -11,6 +11,7 @@ define('WINDOWS', false);
 // URL used to serve the files that are in the public_html folder of this project
 // If served from the root folder, just put /. If served from another folder:
 // http://myDomainName.com/eBayDemo, you would put '/eBayDemo/'
+// You also need to put this value into 'views/_templates/footer.php' and in '/.htaccess'
 define('SITE_URL', '/');
 // Put the location of your curl program here
 define('CURL_PGM', '/usr/bin/curl');

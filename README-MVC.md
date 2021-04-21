@@ -6,7 +6,7 @@ To implement MVC on your server, modify .htaccess or web.config to rewrite urls.
 
 The included files should be installed into two separate folders on your webserver:
 + **public_html** - Folder contains files that can be served from your web server.  The folder should either be your web root folder, or be a sub folder within your web root folder. 
-+ **application** - Folder contains files that are not publicly available from your web server. This demo assumes the folder is at the same level as public_html.
++ **application** - Folder contains files that are not publicly available from your web server. This demo assumes the folder is at the same directory level as public_html.
 
 Files to implement the MVC pattern are:
 + **application/libs/application.php** - implements the MVC style of urls
