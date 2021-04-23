@@ -3,7 +3,7 @@ This small php application should get you started using the **eBay Developer's A
 
 There are three methods demonstrated. You will find them in the file **eBayrepository.php**.
 
-1. ***getAppToken()*** - gets a new token only when the current token has expired. This minimizes the number of eBay token requests and speeds the API calls by eliminating unneeded requests to eBay.
+1. ***getAppToken()*** - manages OAuth credentials. Gets a new token only when the current token has expired. This minimizes the number of eBay token requests and speeds the API calls by eliminating unneeded requests to eBay.
 2. ***searchCategories($term)*** - search eBay for categories suggested by your search terms
 3. ***getItemAspects($catID)*** - get item specifics for a given eBay category
 
