@@ -1,8 +1,5 @@
 # eBay Developer API 
-This small php application should get you started using the **eBay Developer's API**. The API calls demonstrated here only require Application access tokens. The calls return
-general eBay information, not information specific to a user's account. You can extend the getAppToken method to include User level tokens. Paste your developer token into the file DemoConstants.php before trying out this demo. 
-
-A working copy of the demo is [here.](https://php-mvc.rickapps.com)
+This small php application should get you started using the **eBay Developer's API**. A working copy of the demo is [here.](https://php-mvc.rickapps.com)
 
 There are three methods demonstrated. You will find them in the file **eBayrepository.php**.
 
@@ -11,6 +8,9 @@ There are three methods demonstrated. You will find them in the file **eBayrepos
 3. ***getItemAspects($catID)*** - get item specifics for a given eBay category
 
 Information is transferred to and from eBay using the [curl](https://curl.se/) program. You will need a copy of it on your server. Edit DemoContants.php to specify the path to the program.
+
+The API calls demonstrated here only require Application access tokens. The calls return
+general eBay information, not information specific to a user's account. You can extend the getAppToken method to include User level tokens. Paste your developer token into the file DemoConstants.php before trying out this demo. 
 
 The demo app uses the MVC pattern. You can use MVC or scrap it. The three methods will work regardless of MVC. You will find more documentation on how MVC is implemented for this project in  *README-MVC.md*.
 
