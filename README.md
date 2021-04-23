@@ -14,7 +14,7 @@ general eBay information, not information specific to a user's account. You can 
 
 The demo app uses the MVC pattern. You can use MVC or scrap it. The three methods will work regardless of MVC. You will find more documentation on how MVC is implemented for this project in  *README-MVC.md*.
 
-## INSTALATION
+## INSTALLATION
 1. Copy the files to a publicly accessible location on your web server. The files in folder public_html are intended to be served by the web server. The files in folder /application are not intended to be browsable. You will find a .htaccess file in that folder to prevent it from being browsed . You can also install the /application folder outside your web root folder to prevent it from being browsed. 
 2. Install mod_rewrite on your server if not already supported.
 3. Edit the file */.htaccess* (*Web.config* for IIS). You may need to change the line 'RewriteBase ...' to point to the folder where you installed this project. If you installed the project such that the url is *www.myDomain.com*, comment out the line or change to RewriteBase /. But if you copied the project to a subfolder, such as *www.myDomain.com/eBayAPI*, change the line to 'RewriteBase /eBayAPI/'
