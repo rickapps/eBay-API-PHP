@@ -2,7 +2,7 @@
 
 You do not need MVC to use the eBay API calls, but to get this demo working, you need to make a few small edits. The structure included here is overkill for this small app, but it might be usefull for building your own project.  
 
-Much of the MVC code is based on [github.](https://github.com/panique/mini2)  You can probably find better documentation (and code) for MVC from that project.
+The MVC used here has no dependencies on any other framework. However, much of the MVC code is based on [github.](https://github.com/panique/mini2)  You can probably find better documentation (and code) for MVC from that project.
 
 To implement MVC on your server, modify .htaccess or web.config to rewrite urls. A sample .htaccess is included. You also need to modify DemoConstants.php to specify the locations of the two folders used by this project.
 
