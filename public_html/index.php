@@ -20,11 +20,8 @@ define('PROJECT_ROOT', '/home/rickapps/Projects/eBay-API-PHP');
 // is /home2/hostgator12/php-mvc.rickapps.com/public_html.
 //define('PROJECT_ROOT', '/home2/hostgator12/php-mvc.rickapps.com');
 
-// load application config (error reporting etc.)
+// load program constants and config stuff
 require PROJECT_ROOT . '/application/config/DemoConstants.php';
-// Comment out one of these constant files, but don't put your passwords 
-// into source control.
-//require PROJECT_ROOT . '/application/config/ActualConstants.php';
 
 // load application class
 require PROJECT_ROOT . '/application/libs/application.php';
