@@ -15,7 +15,6 @@ class Process extends Controller
     {
         $itemSpec = [];
         $itemAspect = $this->uow->eBayRep()->getItemAspects($catID);
-//        $specValues = $this->uow->FExchangeRep()->getSpecificValues($itemRID, $catID);
         if (count($itemAspect->aspects) > 0)
         {
             foreach($itemAspect->aspects as $aspect)
