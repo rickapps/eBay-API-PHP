@@ -1,5 +1,5 @@
 # eBay Developer API 
-This small php application should get you started using the **eBay Developer's API**. A working copy of the demo is [here.](https://php-mvc.rickapps.com)
+This small php application should get you started using the **eBay Developer's API**. A working copy of this project is [here.](https://php-mvc.rickapps.com)
 
 There are three methods demonstrated. You will find them in the file **eBayrepository.php**.
 
