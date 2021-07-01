@@ -10,6 +10,11 @@ include_once(PROJECT_ROOT . '/application/views/_templates/header.php');
 <h1>eBay API Setup</h1>
     <!-- main content output -->
     <div>
+    <p>Demonstration of 
+    <a href='/home/categories'>search eBay categories</a>,  
+    <a href='/home/specifics'>get item aspects</a>, 
+    and <a href='/home/tokens'>OAuth tokens.</a> Use these examples to 
+    implement other API calls.</p>
     <p>Make sure you have made the necessary modifications to DemoConstants.php and /.htaccess.
     You need to have curl installed on your webserver. You need a hashed copy of your eBay 
     developer authorization token in the DemoConstants.php file. Use your production keys, not
