@@ -56,7 +56,7 @@ class eBayrepository
         // Get a fresh token
         $token = $this->getAppToken();
         unset($out);
-        $fmt = 'https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0/get_category_suggestions?q=%s';
+        $fmt = 'https://api.ebay.com/commerce/taxonomy/v1/category_tree/0/get_category_suggestions?q=%s';
         $cmd = sprintf($fmt, $term);
         $options = " -sS -X GET ";
         $headers = ' -H "Content-Type: application/json" '
@@ -99,7 +99,7 @@ class eBayrepository
         // Get a fresh token
         $token = $this->getAppToken();
         unset($out);
-        $fmt = 'https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0/get_item_aspects_for_category?category_id=%s';
+        $fmt = 'https://api.ebay.com/commerce/taxonomy/v1/category_tree/0/get_item_aspects_for_category?category_id=%s';
         $cmd = sprintf($fmt, $catID);
         $options = " -sS -X GET ";
         $headers = ' -H "Content-Type: application/json" '
