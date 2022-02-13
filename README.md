@@ -1,7 +1,7 @@
 # eBay Developer API 
 This small php application should get you started using the **eBay Developer's API**. A working copy of this project is [here.](https://php-mvc.rickapps.com)
 
-There are three methods demonstrated. You will find them in the file **eBayrepository.php**.
+There are three methods demonstrated. You will find them in the file **application/libs/eBayrepository.php**.
 
 1. ***getAppToken()*** - manages OAuth credentials. Gets a new token only when the current token has expired. This minimizes the number of eBay token requests and speeds the API calls by eliminating unneeded requests to eBay.
 2. ***searchCategories($term)*** - search eBay for categories suggested by your search terms
