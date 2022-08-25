@@ -33,7 +33,9 @@ include_once(PROJECT_ROOT . '/application/views/specificsModal.php');
     </span>
     </div>
     <p class="m-2">Select a category then click Get Specifics. 
-    Item aspects change depending on the category selected. Not all eBay categories have item aspects.
+    Item aspects change depending on the category selected. Not all eBay categories have item aspects. Try the
+    dialog using different categories. You will notice the values change depending on category. The 'OK' button
+    on the dialog is not hooked up. You must select 'Cancel' to close the dialog.
     </div>
 <!-- End of page body ------------------------------------------>
 <?php

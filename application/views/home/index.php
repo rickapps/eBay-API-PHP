@@ -11,9 +11,9 @@ include_once(PROJECT_ROOT . '/application/views/_templates/header.php');
     <!-- main content output -->
     <div>
     <p>Demonstration of 
-    <a href='/home/categories'>search eBay categories</a>,  
-    <a href='/home/specifics'>get item aspects</a>, 
-    and <a href='/home/tokens'>OAuth tokens.</a> Use these examples to 
+    <a href='<?php echo SITE_BASE; ?>home/categories'>search eBay categories</a>,  
+    <a href='<?php echo SITE_BASE; ?>home/specifics'>get item aspects</a>, 
+    and <a href='<?php echo SITE_BASE; ?>home/tokens'>OAuth tokens.</a> Use these examples to 
     implement other API calls.</p>
     <p>Make sure you have made the necessary modifications to DemoConstants.php and /.htaccess.
     You need to have curl installed on your webserver. You need a hashed copy of your eBay 
