@@ -7,7 +7,7 @@ There are three methods demonstrated. You will find them in the file **applicati
 2. ***searchCategories($term)*** - search eBay for categories suggested by your search terms
 3. ***getItemAspects($catID)*** - get item specifics for a given eBay category
 
-Information is transferred to and from eBay using the [curl](https://curl.se/) program. You will need a copy of it on your server. Edit DemoContants.php to specify the path to the program.
+Information is transferred to and from eBay using the [curl](https://curl.se/) program. You will need a copy of it on your server. Edit DemoConstants.php to specify the path to the program.
 
 The API calls demonstrated here only require Application access tokens. The calls return
 general eBay information, not information specific to a user's account. If you need user level tokens, look at this project: [rickapps/eBay-Sell-Feed-API](https://github.com/rickapps/eBay-Sell-Feed-API). Otherwise, be sure to paste your developer token into the file DemoConstants.php before trying out this demo. 
