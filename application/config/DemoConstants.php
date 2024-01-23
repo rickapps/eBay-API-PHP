@@ -10,9 +10,15 @@ error_reporting(E_ALL);
 define('WINDOWS', false);
 // URL used to serve the files that are in the public_html folder of this project
 // If served from the root folder, just put /. If served from another folder:
-// http://myDomainName.com/eBayDemo, you would put '/eBayDemo/'
+// https://myDomainName.com/eBayDemo, you would put '/eBayDemo/'
 // You also need to put this value into '/.htaccess'
 define('SITE_BASE', '/');
+// Bit of a giant kludge here. Put your base url that displays
+// the index page. This is passed to javascript. If you 
+// are curious, do global search for SITE_LINK
+// and maybe you can write it better. I'm tired. If you just
+// want the code to work, put your base url here and keep going.
+define('SITE_LINK', 'https://myDomainName.com');
 // Put the location of your curl program here
 define('CURL_PGM', '/usr/bin/curl');
 // For windows, curl location might be something like below.
